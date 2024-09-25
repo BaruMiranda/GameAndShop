@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:layout_margin="10dp">
+
+    <!-- Parte frontal de la carta -->
+    <ImageView
+        android:id="@+id/ivCardFront"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <!-- Parte trasera de la carta -->
+    <ImageView
+        android:id="@+id/ivCardBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/carta_off"
+        android:scaleType="centerCrop"/>
+</FrameLayout>
