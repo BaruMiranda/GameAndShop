@@ -12,7 +12,9 @@ import com.barcod.juegabebe.ui.container.onegame.YoNuncaNuncaFragment
 import com.barcod.juegabebe.ui.container.threegame.SiHaTodoFragment
 import com.barcod.juegabebe.ui.container.twogame.AlQueLeTocaTocaFragment
 import com.bms.mcconsultcorp.service.FragmentService
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(), FragmentService {
 
     private lateinit var binding: ActivityMainBinding

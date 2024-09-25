@@ -52,32 +52,28 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
-    //Retrofit and OkHttp3
-    implementation ("com.squareup.okhttp3:okhttp:4.6.0")
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.6.0")
-    implementation ("com.squareup.retrofit2:retrofit:2.6.1")
-    implementation ("com.squareup.retrofit2:converter-gson:2.6.1")
+    // Retrofit y OkHttp3
+    implementation("com.squareup.okhttp3:okhttp:4.10.0") // Actualización recomendada
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0") // Actualización recomendada
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") // Actualización recomendada
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") // Actualización recomendada
 
-    //  Coroutines
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
-    // ViewModel
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    // ViewModel y LiveData
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1") // Actualización recomendada
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1") // Actualización recomendada
 
-    // LiveData
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    // Fragment y Activity
+    implementation("androidx.fragment:fragment-ktx:1.6.1") // Actualización recomendada
+    implementation("androidx.activity:activity-ktx:1.7.2") // Actualización recomendada
 
-    //fragment
-    implementation ("androidx.fragment:fragment-ktx:1.5.5")
+    // Lottie
+    implementation("com.airbnb.android:lottie:6.0.0") // Actualización recomendada
 
-    //Activity
+    // Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
-    implementation ("androidx.activity:activity-ktx:1.6.1")
-
-    //lottie
-    implementation ("com.airbnb.android:lottie:4.1.0")
-
-    //Hilt
-    implementation ("com.google.dagger:hilt-android:2.44")
-    kapt ("com.google.dagger:hilt-compiler:2.44")
 }

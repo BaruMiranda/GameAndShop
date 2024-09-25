@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.fragment.app.viewModels
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import com.barcod.juegabebe.data.model.response.CategoryResponse
 import com.barcod.juegabebe.databinding.FragmentContainerBinding
 import com.barcod.juegabebe.ui.main.MainActivity
@@ -42,6 +41,10 @@ class ContainerFragment : Fragment() {
         categoryViewModel.itemCategoryLiveData.observe(viewLifecycleOwner) {
             if (it != null) {
                 listCategory = it
+                binding.tvTodito.text = it[2].descripcion
+                binding.tvTocaToca.text = it[3].descripcion
+                binding.tvSiHaTodo.text = it[1].descripcion
+                binding.tvYoNuncaNunca.text = it[0].descripcion
             }
         }
 
@@ -51,10 +54,28 @@ class ContainerFragment : Fragment() {
 
         categoryViewModel.getCategory()
 
-        binding.todito.setOnClickListener {
+        binding.cardTodito.setOnClickListener {
             IDCATEGORY = listCategory[2].id.toString()
             DESCRIPTIONCATEGORY = listCategory[2].descripcion
             (activity as MainActivity?)!!.verToditoFragment()
+        }
+
+        binding.cardTocaToca.setOnClickListener {
+            IDCATEGORY = listCategory[3].id.toString()
+            DESCRIPTIONCATEGORY = listCategory[3].descripcion
+            (activity as MainActivity?)!!.verAlQueLeTocaTocaFragment()
+        }
+
+        binding.cardSiHaTodo.setOnClickListener {
+            IDCATEGORY = listCategory[1].id.toString()
+            DESCRIPTIONCATEGORY = listCategory[1].descripcion
+            (activity as MainActivity?)!!.verSiHaTodoFragment()
+        }
+
+        binding.cardYoNuncaNunca.setOnClickListener {
+            IDCATEGORY = listCategory[0].id.toString()
+            DESCRIPTIONCATEGORY = listCategory[0].descripcion
+            (activity as MainActivity?)!!.verYoNuncaNuncaFragment()
         }
 
     }

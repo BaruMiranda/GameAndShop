@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardYoNuncaNunca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -37,7 +38,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:src="@drawable/fondo_todito"/>
+
                 <TextView
+                    android:id="@+id/tvYoNuncaNunca"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:gravity="center"
@@ -45,6 +48,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTocaToca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -61,6 +65,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/fondo_todito"/>
                 <TextView
+                    android:id="@+id/tvTocaToca"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:gravity="center"
@@ -74,6 +79,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSiHaTodo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -90,6 +96,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/fondo_todito"/>
                 <TextView
+                    android:id="@+id/tvSiHaTodo"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:gravity="center"
@@ -97,7 +104,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/todito"
+            android:id="@+id/cardTodito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -114,6 +121,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/fondo_todito"/>
                 <TextView
+                    android:id="@+id/tvTodito"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:gravity="center"
