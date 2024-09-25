@@ -1,4 +1,4 @@
-package com.barcod.juegabebe.view.container.fourgame
+package com.barcod.juegabebe.ui.container.fourgame
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.barcod.juegabebe.R
-import com.barcod.juegabebe.model.CardModel
+import com.barcod.juegabebe.data.model.CardModel
 import android.os.Handler
 import android.os.Looper
 

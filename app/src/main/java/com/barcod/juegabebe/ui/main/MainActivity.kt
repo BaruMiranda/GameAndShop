@@ -1,4 +1,4 @@
-package com.barcod.juegabebe.view.main
+package com.barcod.juegabebe.ui.main
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -6,11 +6,11 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.barcod.juegabebe.databinding.ActivityMainBinding
-import com.barcod.juegabebe.view.container.ContainerFragment
-import com.barcod.juegabebe.view.container.fourgame.ToditoFragment
-import com.barcod.juegabebe.view.container.onegame.YoNuncaNuncaFragment
-import com.barcod.juegabebe.view.container.threegame.SiHaTodoFragment
-import com.barcod.juegabebe.view.container.twogame.AlQueLeTocaTocaFragment
+import com.barcod.juegabebe.ui.container.ContainerFragment
+import com.barcod.juegabebe.ui.container.fourgame.ToditoFragment
+import com.barcod.juegabebe.ui.container.onegame.YoNuncaNuncaFragment
+import com.barcod.juegabebe.ui.container.threegame.SiHaTodoFragment
+import com.barcod.juegabebe.ui.container.twogame.AlQueLeTocaTocaFragment
 import com.bms.mcconsultcorp.service.FragmentService
 
 class MainActivity : AppCompatActivity(), FragmentService {

@@ -1,4 +1,4 @@
-package com.barcod.juegabebe.view.container.onegame
+package com.barcod.juegabebe.ui.container.onegame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

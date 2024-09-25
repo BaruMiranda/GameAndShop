@@ -1,4 +1,4 @@
-package com.barcod.juegabebe.view.main
+package com.barcod.juegabebe.ui.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

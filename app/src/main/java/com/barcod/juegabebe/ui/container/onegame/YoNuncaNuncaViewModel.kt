@@ -1,17 +1,8 @@
-package com.barcod.juegabebe.view.container.onegame
+package com.barcod.juegabebe.ui.container.onegame
 
-import android.content.Context
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.barcod.juegabebe.network.Connection
-import com.barcod.juegabebe.network.Endpoints
-import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import retrofit2.Response
 
 class YoNuncaNuncaViewModel : ViewModel()  {
 

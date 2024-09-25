@@ -1,27 +1,27 @@
-package com.barcod.juegabebe.view.container.twogame
+package com.barcod.juegabebe.ui.container.threegame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.barcod.juegabebe.databinding.FragmentAlQueLeTocaTocaBinding
+import com.barcod.juegabebe.databinding.FragmentSiHaTodoBinding
 
 
-class AlQueLeTocaTocaFragment : Fragment() {
+class SiHaTodoFragment : Fragment() {
 
-    private var _binding: FragmentAlQueLeTocaTocaBinding? = null
+    private var _binding: FragmentSiHaTodoBinding? = null
     private val binding get() = _binding!!
 
-    fun newInstance(): AlQueLeTocaTocaFragment {
-        return AlQueLeTocaTocaFragment()
+    fun newInstance(): SiHaTodoFragment {
+        return SiHaTodoFragment()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAlQueLeTocaTocaBinding.inflate(inflater, container, false)
+        _binding = FragmentSiHaTodoBinding.inflate(inflater, container, false)
         confIU()
         return binding.root
     }

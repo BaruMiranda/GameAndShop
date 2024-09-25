@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
+    id("kotlin-kapt")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -74,4 +76,8 @@ dependencies {
 
     //lottie
     implementation ("com.airbnb.android:lottie:4.1.0")
+
+    //Hilt
+    implementation ("com.google.dagger:hilt-android:2.44")
+    kapt ("com.google.dagger:hilt-compiler:2.44")
 }

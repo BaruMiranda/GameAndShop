@@ -1,4 +1,4 @@
-package com.barcod.juegabebe.view.container.fourgame
+package com.barcod.juegabebe.ui.container.fourgame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import com.barcod.juegabebe.databinding.FragmentToditoBinding
-import com.barcod.juegabebe.model.CardModel
+import com.barcod.juegabebe.data.model.CardModel
 
 
 class ToditoFragment : Fragment() {
