@@ -5,13 +5,23 @@
     android:layout_margin="10dp">
 
     <!-- Parte frontal de la carta -->
-    <ImageView
+    <LinearLayout
         android:id="@+id/ivCardFront"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Toma Todo"/>
+    </LinearLayout>
 
     <!-- Parte trasera de la carta -->
     <ImageView

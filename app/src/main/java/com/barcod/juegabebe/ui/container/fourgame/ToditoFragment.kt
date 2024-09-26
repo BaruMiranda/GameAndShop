@@ -33,7 +33,7 @@ class ToditoFragment : Fragment() {
 
     private fun confIU() {
 
-        binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), 3)
 
         val cardList = mutableListOf(
             CardModel("T"),

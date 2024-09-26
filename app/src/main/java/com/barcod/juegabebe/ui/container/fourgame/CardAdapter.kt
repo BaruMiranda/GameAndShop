@@ -12,13 +12,16 @@ import com.barcod.juegabebe.R
 import com.barcod.juegabebe.data.model.CardModel
 import android.os.Handler
 import android.os.Looper
+import android.widget.LinearLayout
+import android.widget.TextView
 
 class CardAdapter(private val cards: MutableList<CardModel>) : RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
 
     private var isSelectionEnabled = true
 
     class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivCardFront: ImageView = itemView.findViewById(R.id.ivCardFront)
+        val ivCardFront: LinearLayout = itemView.findViewById(R.id.ivCardFront)
+        val tvDescription: TextView = itemView.findViewById(R.id.tvDescription)
         val ivCardBack: ImageView = itemView.findViewById(R.id.ivCardBack)
     }
 
@@ -33,7 +36,7 @@ class CardAdapter(private val cards: MutableList<CardModel>) : RecyclerView.Adap
         if (card.isRevealed) {
             holder.ivCardBack.visibility = View.GONE
             holder.ivCardFront.visibility = View.VISIBLE
-            holder.ivCardFront.setImageResource(getCardDrawable(card.letter))
+            holder.tvDescription.text = getCardDrawable(card.letter)
         } else {
             holder.ivCardBack.visibility = View.VISIBLE
             holder.ivCardFront.visibility = View.GONE
@@ -53,13 +56,13 @@ class CardAdapter(private val cards: MutableList<CardModel>) : RecyclerView.Adap
 
     override fun getItemCount(): Int = cards.size
 
-    private fun getCardDrawable(letter: String): Int {
+    private fun getCardDrawable(letter: String): String {
         return when (letter) {
-            "T" -> R.drawable.t
-            "O" -> R.drawable.o
-            "D" -> R.drawable.d
-            "I" -> R.drawable.i
-            else -> R.drawable.carta_off
+            "T" -> "Toma \nTodo"
+            "O" -> "Ordena\nQuien\nToma"
+            "D" -> "Toma\nTu\nDerecha"
+            "I" -> "Toma\nTu\nIzquierda"
+            else -> "Toma\nNomas"
         }
     }
 
@@ -72,7 +75,7 @@ class CardAdapter(private val cards: MutableList<CardModel>) : RecyclerView.Adap
             override fun onAnimationEnd(animation: Animator) {
                 holder.ivCardBack.visibility = View.GONE
                 holder.ivCardFront.visibility = View.VISIBLE
-                holder.ivCardFront.setImageResource(getCardDrawable(card.letter))
+                holder.tvDescription.text = getCardDrawable(card.letter)
                 scaleXBack.start()
             }
         })
