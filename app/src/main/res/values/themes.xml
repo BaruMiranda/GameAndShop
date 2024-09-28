@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.JuegaBebe" parent="Base.Theme.JuegaBebe" />
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/yellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/fondo_todito</item>
+        <item name="postSplashScreenTheme">@style/Theme.JuegaBebe</item>
+    </style>
 </resources>
